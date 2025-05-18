@@ -1,0 +1,99 @@
+@model TicketManagementSystem.BLL.Models.TicketViewModel
+
+@{
+    ViewData["Title"] = "Create Ticket";
+}
+
+<h1>Create Ticket</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">New Ticket Information</h6>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label"></label>
+                        <input asp-for="FullName" class="form-control" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="MobileNumber" class="form-label"></label>
+                        <input asp-for="MobileNumber" class="form-control" />
+                        <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="IssueTypeId" class="form-label"></label>
+                        <select asp-for="IssueTypeId" class="form-select">
+                            <option value="">-- Select Issue Type --</option>
+                            @foreach (var item in ViewBag.IssueTypes)
+                            {
+                                <option value="@item.IssueTypeId">@item.TypeName</option>
+                            }
+                        </select>
+                        <span asp-validation-for="IssueTypeId" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label"></label>
+                        <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Priority" class="form-label"></label>
+                        <select asp-for="Priority" class="form-select">
+                            <option value="">-- Select Priority --</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                        <span asp-validation-for="Priority" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Index" class="btn btn-secondary me-md-2">Back to List</a>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Guidelines</h6>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Full Name must be your complete name.</li>
+                    <li>Mobile Number should include country code (e.g., +1XXXXXXXXXX).</li>
+                    <li>Provide a detailed description of your issue for faster resolution.</li>
+                    <li>Priority indicates the urgency of your issue:
+                        <ul>
+                            <li><strong>Low</strong>: Minor issues that don't affect work.</li>
+                            <li><strong>Medium</strong>: Issues that limit productivity but have workarounds.</li>
+                            <li><strong>High</strong>: Critical issues that prevent work.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

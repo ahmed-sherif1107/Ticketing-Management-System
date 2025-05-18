@@ -1,0 +1,81 @@
+@model TicketManagementSystem.BLL.Models.TicketViewModel
+
+@{
+    ViewData["Title"] = "Ticket Details";
+}
+
+<h1>Ticket Details</h1>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex justify-content-between align-items-center">
+        <h6 class="m-0 font-weight-bold text-primary">Ticket #@Model.TicketId</h6>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.TicketId" class="btn btn-primary btn-sm">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary btn-sm">Back to List</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.FullName)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.FullName)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.MobileNumber)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.MobileNumber)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Email)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Email)</dd>
+
+                    <dt class="col-sm-4">Issue Type</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.IssueTypeName)</dd>
+                </dl>
+            </div>
+            <div class="col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Priority)</dt>
+                    <dd class="col-sm-8">
+                        @{
+                            var priorityClass = Model.Priority == "High" ? "bg-danger" : 
+                                              Model.Priority == "Medium" ? "bg-warning text-dark" : 
+                                              "bg-success";
+                        }
+                        <span class="badge @priorityClass">@Model.Priority</span>
+                    </dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Status)</dt>
+                    <dd class="col-sm-8">
+                        @{
+                            var statusClass = Model.Status == "Open" ? "bg-primary" : 
+                                            Model.Status == "In Progress" ? "bg-info text-dark" : 
+                                            Model.Status == "Resolved" ? "bg-success" : 
+                                            "bg-secondary";
+                        }
+                        <span class="badge @statusClass">@Model.Status</span>
+                    </dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.CreatedDate)</dt>
+                    <dd class="col-sm-8">@Model.CreatedDate.ToString("yyyy-MM-dd HH:mm:ss")</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.ModifiedDate)</dt>
+                    <dd class="col-sm-8">
+                        @(Model.ModifiedDate.HasValue ? Model.ModifiedDate.Value.ToString("yyyy-MM-dd HH:mm:ss") : "Not modified yet")
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0">@Html.DisplayNameFor(model => model.Description)</h6>
+                    </div>
+                    <div class="card-body">
+                        <p style="white-space: pre-wrap;">@Html.DisplayFor(model => model.Description)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

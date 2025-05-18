@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">Welcome to Ticket Management System</h1>
+    <p class="lead mt-4">A powerful system to manage customer support tickets efficiently.</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="card-deck">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ticket Management</h5>
+                        <p class="card-text">Create, view, and manage customer support tickets.</p>
+                        <div class="d-grid gap-2">
+                            <a asp-controller="Tickets" asp-action="Index" class="btn btn-primary">View All Tickets</a>
+                            <a asp-controller="Tickets" asp-action="Create" class="btn btn-success">Create New Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+@model TicketManagementSystem.BLL.Models.TicketListViewModel
+
+@{
+    ViewData["Title"] = "Tickets";
+}
+
+<h1>Tickets</h1>
+
+<div class="row mb-3">
+    <div class="col">
+        <a asp-action="Create" class="btn btn-primary">Create New Ticket</a>
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Filter Options</h6>
+    </div>
+    <div class="card-body">
+        <form asp-action="Index" method="get" class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label">Issue Type</label>
+                <select name="issueTypeId" class="form-select">
+                    <option value="">All Issue Types</option>
+                    @foreach (var item in Model.IssueTypes)
+                    {
+                        <option value="@item.IssueTypeId" selected="@(Model.FilterIssueTypeId == item.IssueTypeId)">@item.TypeName</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Priority</label>
+                <select name="priority" class="form-select">
+                    <option value="">All Priorities</option>
+                    <option value="Low" selected="@(Model.FilterPriority == "Low")">Low</option>
+                    <option value="Medium" selected="@(Model.FilterPriority == "Medium")">Medium</option>
+                    <option value="High" selected="@(Model.FilterPriority == "High")">High</option>
+                </select>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary me-2">Apply Filter</button>
+                <a asp-action="Index" class="btn btn-secondary">Reset</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.Tickets.Any())
+{
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">
+                @if (Model.FilterIssueTypeId.HasValue || !string.IsNullOrEmpty(Model.FilterPriority))
+                {
+                    <span>Filtered Tickets: </span>
+                    @if (Model.FilterIssueTypeId.HasValue)
+                    {
+                        <span class="badge bg-info">Issue Type: @Model.SelectedIssueTypeName</span>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.FilterPriority))
+                    {
+                        <span class="badge bg-info">Priority: @Model.FilterPriority</span>
+                    }
+                }
+                else
+                {
+                    <span>All Tickets</span>
+                }
+            </h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Ticket ID</th>
+                            <th>Customer Name</th>
+                            <th>Issue Type</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Created Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Tickets)
+                        {
+                            <tr>
+                                <td>@item.TicketId</td>
+                                <td>@item.FullName</td>
+                                <td>@item.IssueTypeName</td>
+                                <td>
+                                    @{
+                                        var priorityClass = item.Priority == "High" ? "bg-danger" : 
+                                                          item.Priority == "Medium" ? "bg-warning text-dark" : 
+                                                          "bg-success";
+                                    }
+                                    <span class="badge @priorityClass">
+                                        @item.Priority
+                                    </span>
+                                </td>
+                                <td>
+                                    @{
+                                        var statusClass = item.Status == "Open" ? "bg-primary" : 
+                                                         item.Status == "In Progress" ? "bg-info text-dark" : 
+                                                         item.Status == "Resolved" ? "bg-success" : 
+                                                         "bg-secondary";
+                                    }
+                                    <span class="badge @statusClass">
+                                        @item.Status
+                                    </span>
+                                </td>
+                                <td>@item.CreatedDate.ToString("yyyy-MM-dd HH:mm")</td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.TicketId" class="btn btn-info btn-sm">View</a>
+                                    <a asp-action="Edit" asp-route-id="@item.TicketId" class="btn btn-primary btn-sm">Edit</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-info">
+        No tickets found matching the current filter criteria.
+    </div>
+} 
