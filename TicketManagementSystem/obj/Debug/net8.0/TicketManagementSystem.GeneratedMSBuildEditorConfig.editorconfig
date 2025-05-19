@@ -9,55 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TicketManagementSystem
 build_property.RootNamespace = TicketManagementSystem
-build_property.ProjectDir = /home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/
+build_property.ProjectDir = C:\Users\PC\Desktop\mvc task\TicketManagementSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem
+build_property.MSBuildProjectDirectory = C:\Users\PC\Desktop\mvc task\TicketManagementSystem
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Tickets/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlja2V0cy9DcmVhdGUuY3NodG1s
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Tickets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Tickets/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlja2V0cy9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Tickets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Tickets/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlja2V0cy9FZGl0LmNzaHRtbA==
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Tickets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Tickets/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlja2V0cy9JbmRleC5jc2h0bWw=
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Tickets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-i1jjqantfs
+[C:/Users/PC/Desktop/mvc task/TicketManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oe5eeamzxi

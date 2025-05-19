@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/TicketManagementSystem.csproj": {}
+    "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
   },
   "projects": {
-    "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.BLL/TicketManagementSystem.BLL.csproj": {
+    "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.BLL\\TicketManagementSystem.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.BLL/TicketManagementSystem.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.BLL\\TicketManagementSystem.BLL.csproj",
         "projectName": "TicketManagementSystem.BLL",
-        "projectPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.BLL/TicketManagementSystem.BLL.csproj",
-        "packagesPath": "/home/ahmed/.nuget/packages/",
-        "outputPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.BLL/obj/",
+        "projectPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.BLL\\TicketManagementSystem.BLL.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ahmed/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.DAL/TicketManagementSystem.DAL.csproj": {
-                "projectPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.DAL/TicketManagementSystem.DAL.csproj"
+              "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.DAL\\TicketManagementSystem.DAL.csproj": {
+                "projectPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.DAL\\TicketManagementSystem.DAL.csproj"
               }
             }
           }
@@ -41,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -57,41 +64,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.DAL/TicketManagementSystem.DAL.csproj": {
+    "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.DAL\\TicketManagementSystem.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.DAL/TicketManagementSystem.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.DAL\\TicketManagementSystem.DAL.csproj",
         "projectName": "TicketManagementSystem.DAL",
-        "projectPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.DAL/TicketManagementSystem.DAL.csproj",
-        "packagesPath": "/home/ahmed/.nuget/packages/",
-        "outputPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.DAL/obj/",
+        "projectPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.DAL\\TicketManagementSystem.DAL.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ahmed/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +112,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -118,6 +122,18 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -131,49 +147,48 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            }
-          ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/TicketManagementSystem.csproj": {
+    "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem\\TicketManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/TicketManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "projectName": "TicketManagementSystem",
-        "projectPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/TicketManagementSystem.csproj",
-        "packagesPath": "/home/ahmed/.nuget/packages/",
-        "outputPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem/obj/",
+        "projectPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/ahmed/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.BLL/TicketManagementSystem.BLL.csproj": {
-                "projectPath": "/home/ahmed/Desktop/Task - mvc - work/TicketManagementSystem.BLL/TicketManagementSystem.BLL.csproj"
+              "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.BLL\\TicketManagementSystem.BLL.csproj": {
+                "projectPath": "C:\\Users\\PC\\Desktop\\mvc task\\TicketManagementSystem.BLL\\TicketManagementSystem.BLL.csproj"
               }
             }
           }
@@ -187,7 +202,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -203,20 +219,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -225,7 +227,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
